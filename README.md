@@ -12,7 +12,9 @@ I used HTML, CSS, Bootstrap, and some JavaScript.
 index.html
 i. When the user gets to the homepage they will be asked to enter their
 name and their name will be displayed in the welcome page and their input is saved to the localStorage.
+
 ii. When the user clicks the “Click Here” button, the button will open a new window using the open() method.
+
 iii. Random quotes are generated with the use of arrays.
 
 gallery.html
