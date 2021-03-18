@@ -58,12 +58,8 @@ h1 {
     padding-bottom: 7rem;
 }
 
-#about-logo {
+#about-logo:hover {
   opacity: 0.5;
-}
-
-img#about-logo:hover {
-  opacity: 1.0;
 }
 
 #about-content {
