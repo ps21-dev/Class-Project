@@ -10,6 +10,7 @@ I used HTML, CSS, Bootstrap, and some JavaScript.
 /* JS features details */
 
 index.html
+
 i. When the user gets to the homepage they will be asked to enter their
 name and their name will be displayed in the welcome page and their input is saved to the localStorage.
 
