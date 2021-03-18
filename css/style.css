@@ -62,8 +62,8 @@ h1 {
     opacity: .25;
 }
 
-#about-logo:hover {
-    opacity: 0;
+img #about-logo:hover {
+    opacity: 1;
 }
 
 #about-content {
