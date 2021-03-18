@@ -62,7 +62,7 @@ h1 {
   opacity: 0.5;
 }
 
-#about-logo:hover {
+img#about-logo:hover {
   opacity: 1.0;
 }
 
