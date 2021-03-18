@@ -63,7 +63,7 @@ h1 {
 }
 
 img #about-logo:hover {
-    opacity: 1;
+    opacity: 1.0;
 }
 
 #about-content {
