@@ -59,11 +59,11 @@ h1 {
 }
 
 #about-logo {
-    opacity: .5;
+  opacity: 0.5;
 }
 
-img:hover {
-    opacity: 1.0;
+#about-logo:hover {
+  opacity: 1.0;
 }
 
 #about-content {
