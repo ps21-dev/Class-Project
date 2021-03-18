@@ -19,6 +19,7 @@ ii. When the user clicks the “Click Here” button, the button will open a new
 iii. Random quotes are generated with the use of arrays.
 
 gallery.html
+
 i. Random images are displayed on each load with the use of arrays.
 
 All webpages has a Last Modified dates located in footer with the use of Date and lastModified() method. 
