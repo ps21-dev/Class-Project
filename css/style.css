@@ -57,8 +57,13 @@ h1 {
 #gallery-images {
     padding-bottom: 7rem;
 }
+
 #about-logo {
     opacity: .25;
+}
+
+#about-logo {
+    opacity: 0;
 }
 
 #about-content {
