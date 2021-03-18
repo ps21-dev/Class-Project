@@ -36,14 +36,14 @@
         //Referenced by the myPicture from the body tag
         function choosePic() {
             randomNum = Math.floor((Math.random() * myPix.length));
-            document.getElementById("myPicture").src = myPix[randomNum];
+            document.getElementById("myPicture").src = "images/" + myPix[randomNum];
         }
     </script>
     <title>Larawan - Gallery</title>
 </head>
 <body> 
         <nav class="navbar navbar-expand-md container-fluid bg-light navbar-light">
-            <a href="index.html"><img class="navbar-brand" src="logo.PNG" alt="Larawan Logo" width= "150" height= "80"></a>
+            <a href="index.html"><img class="navbar-brand" src="images/logo.PNG" alt="Larawan Logo" width= "150" height= "80"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -75,7 +75,7 @@
             <h1 class="text-center">Sample Images</h1>
             <div class="row">
                 <div class="col-sm-12">
-                    <img src="1.jpg" id="myPicture" alt="random images" class="img-fluid img-responsive pagination-centered"/>
+                    <img src="images/1.jpg" id="myPicture" alt="random images" class="img-fluid img-responsive pagination-centered"/>
                     <p id="img-cap">Photos taken by: Jenn Sol Cruz, Dianne Decasa</p>
                 </div>
             </div>
