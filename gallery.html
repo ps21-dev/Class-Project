@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap.css" type="text/css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
+    <!--Bootstrap CDN-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+
+        //Each time the page loads, run the choosePic function
+        window.onload = choosePic;
+
+        //Array of pictures to generate
+        var myPix = new Array("2.jpg","3.jpg", "4.jpg");
+
+        //choosePic function
+        //Random number by using the Math.floor and math.random function multiply by how 
+        //many are in the myPix array
+        //Referenced by the myPicture from the body tag
+        function choosePic() {
+            randomNum = Math.floor((Math.random() * myPix.length));
+            document.getElementById("myPicture").src = myPix[randomNum];
+        }
+    </script>
+    <title>Larawan - Gallery</title>
+</head>
+<body> 
+        <nav class="navbar navbar-expand-md container-fluid bg-light navbar-light">
+            <a href="index.html"><img class="navbar-brand" src="logo.PNG" alt="Larawan Logo" width= "150" height= "80"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="faqs.html" class="nav-link">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+              </nav>
+         
+
+        <div class="container">
+            <h1 class="text-center">Sample Images</h1>
+            <div class="row">
+                <div class="col-sm-12">
+                    <img src="1.jpg" id="myPicture" alt="random images" class="img-fluid img-responsive pagination-centered"/>
+                    <p id="img-cap">Photos taken by: Jenn Sol Cruz, Dianne Decasa</p>
+                </div>
+            </div>
+                <!--
+                <div class="col-sm-6" id="gallery-images">
+                    <p>Click the images to see other images.</p>
+                    <img id="image" src="1.jpg" alt="Sample 1" width ="1157" height="800">
+                    <figcaption>Photos taken by: Jenn Sol Cruz, Dianne Decasa</figcaption>
+                </div>
+
+                
+                <div class="col-sm-6">
+                    <img src="1.jpg" alt="Image Sample 1" class="img-thumbnail">
+                </div>
+                <div class="col-sm-6">
+                    <img src="2.jpg" alt="Image Sample 2" class="img-thumbnail">
+                </div>
+                <div class="col-sm-6">
+                    <img src="3.jpg" alt="Image Sample 3" class="img-thumbnail">
+                </div>
+                <div class="col-sm-6">
+                    <img src="4.jpg" alt="Image Sample 4" class="img-thumbnail">
+                </div>
+            -->
+                               
+        </div>
+
+        <nav class="navbar-fixed-bottom bg-light p-2" id="footer">
+            <div class="container-fluid">
+                <p>All Rights Reserved &#169; Larawan 2021</p>
+                <script>
+                    document.write("<p style='font-style:italic; font-size:16px;'>Last Modified On: " + document.lastModified.toLocaleString() + " EST</p>");
+                </script>
+                <p><i>This website is developed as an educational project.</i> <a href="bootstrap.css" target="_blank"> Link to CSS.</a></p>
+            </div>
+        </nav>
+</body>
+</html>

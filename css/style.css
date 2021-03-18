@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem; 
+    color: #111111;
+}
+
+.navbar-nav a:hover {
+    color: orange;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px lightgrey;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#index-content {
+    padding-top: 30px;
+    padding-bottom: 10rem;
+}
+.index-img {
+    height: 600px;
+    width: 400px;  
+}
+
+#follow {
+    padding-top: 30px;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pagination-centered {
+    padding-top: 30px;
+    text-align: center;
+  }
+
+#img-cap {
+    font-style: italic;
+    font-size: 12px;
+    padding-bottom: 70px;
+}
+
+#gallery-images {
+    padding-bottom: 7rem;
+}
+#about-logo {
+    opacity: .25;
+}
+
+#about-content {
+    color: black;
+}
+
+#form-text {
+    display: flex;
+    justify-content: center;
+}
+
+#contact-form, #faq-style {
+    padding-bottom: 10rem;
+}
+
+.potato {
+    padding-top: 4rem;
+}
+#faq-style a {
+    text-decoration: none;
+    color: darkgray;
+}
+
+#faq-style a:hover {
+    color: black;
+}
+
+#footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}

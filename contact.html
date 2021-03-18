@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap.css" type="text/css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
+    <!--Bootstrap CDN-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Larawan - Contact Us</title>
+</head>
+<body> 
+        <nav class="navbar navbar-expand-md container-fluid bg-light navbar-light">
+            <a href="index.html"><img class="navbar-brand" src="logo.PNG" alt="Larawan Logo" width= "150" height= "80"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                        <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="faqs.html" class="nav-link">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <h1>Contact Us</h1>
+            <div id="form-text">
+                <p>Email us with any questions or inquiries or call 000-0000-0000.<br/>
+                We would be happy to answer your questions and set up a meeting with you. </p>
+            </div>
+            
+            <form action="#" id="contact-form">
+                <p>Please fill out the form.</p>
+                    <div class="form-group">
+                        <label for="fname">NAME</label>
+                        <input class="form-control" type="text" id="fname" name="fullname" placeholder="Name">
+                    </div>
+                        
+                    <div class="form-group">
+                        <label for="email">EMAIL</label>
+                        <input type="text" id="email" name="email" placeholder="Email" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fname">SUBJECT</label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">INQUIRIES</label>
+                        <textarea id="message" name="message" placeholder="Message" rows="10" cols="70" class="form-control"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                            <label for="recommendation" class="drop-down">How did you hear about us?</label>
+                            <select id="recommendation" name="recommendation">
+                                <option value="none" selected>-----</option>
+                                <option value="insta">Instagram</option>
+                                <option value="friend">Friend</option>
+                                <option value="Facebook">Facebook</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <input type="submit" value="SEND EMAIL" class="send">
+                    </div>
+            </form>
+        </div>
+        
+        <nav class="navbar-fixed-bottom bg-light p-2" id="footer">
+            <div class="container-fluid">
+                <p>All Rights Reserved &#169; Larawan 2021</p>
+                <script>
+                    document.write("<p style='font-style:italic; font-size:16px;'>Last Modified On: " + document.lastModified.toLocaleString() + " EST</p>");
+                </script>
+                <p><i>This website is developed as an educational project.</i> <a href="bootstrap.css" target="_blank"> Link to CSS.</a></p>
+            </div>
+        </nav>
+
+  
+
+</body>
+</html>

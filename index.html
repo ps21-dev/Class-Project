@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap.css" type="text/css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
+    <!--Bootstrap CDN-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+        
+        function start() {
+            document.getElementById("clickHereButton").addEventListener("click", open_window, false);
+        }
+
+        function open_window() {
+            var openContact = window.open("contact.html", "", "menubar = yes, toolbar = yes, height=600 width=500");
+        }
+        
+        window.addEventListener("load", start, false);
+
+        /* Prompt User to Enter Name *  
+        var name = window.prompt("Please enter your name:");
+                            
+        // if name is entered empty, repeat the user to enter name until a character is entered
+        while (name.length == 0) {
+            var name = window.prompt("Error! Please enter a valid name: ");
+
+            if (name.length >= 1) {
+                localStorage.setItem("name", name); //set the name entered as key in the localStorage
+            }
+        }      */
+        writeRandomQuote = function () {
+        var quotes = new Array();
+        quotes[0] = "Action is the real measure of intelligence.";
+        quotes[1] = "Baseball has the great advantage over cricket of being sooner ended.";
+        quotes[2] = "Every goal, every action, every thought, every feeling one experiences, whether it be consciously or unconsciously known, is an attempt to increase one's level of peace of mind.";
+        quotes[3] = "A good head and a good heart are always a formidable combination.";
+        var rand = Math.floor(Math.random()*quotes.length);
+        document.write(quotes[rand]);
+        }
+    </script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Larawan - Home</title>
+
+    
+</head>
+<body> 
+    <script>
+        /* Prompt User to Enter Name */   
+
+        for (var i = 0; i < 1; i++) {
+            var name = window.prompt("Please enter your name:");
+            
+            // if name is entered empty, repeat the user to enter name until a character is entered
+            while (name.length == 0) {
+                name = window.prompt("Error! Please enter a valid name: ");
+                
+            } 
+        }     
+        localStorage.setItem("name", name); //set the name entered as key in the localStorage
+        
+        
+    </script>
+        <nav class="navbar navbar-expand-md container-fluid bg-light navbar-light">
+            <a href="index.html"><img class="navbar-brand" src="logo.PNG" alt="Larawan Logo" width= "150" height= "80"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                            <a href="faqs.html" class="nav-link">FAQs</a>
+                        </li>
+                    </ul>
+            </div>
+        </nav>
+        
+        <div class="container" id="index-content">
+            <div class="row p-3">
+                <div class="col-sm-6">
+                    <h1>Welcome, <span id="username"></span>
+                        <script>
+                            document.getElementById("username").innerHTML=localStorage.getItem("name");
+                        </script>
+                    </h1>
+                    <p><i>This website is developed as an educational project.</i></p>
+
+                    <p>Larawan Photography is a group of Filipino Photographers</p>
+
+                    <p>We deliver stunning portraits and always provides the highest level of professional photography.
+                        For family portraits and special events that you don't want to forget in a timeless fashion.
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut amet fugit fugiat quod unde, at quisquam eaque nisi eos minus ipsam repellat accusantium aspernatur esse mollitia facilis temporibus cumque dolorem.
+                        repellat, voluptatem eligendi excepturi praesentium pariatur molestias nostrum! Minima iste debitis sunt nemo architecto!
+                    </p>
+
+                    <p><button id="clickHereButton" name="clickHereButton" type="submit" value="Click here">Click Here</button>
+                        to contact Larawan for more information.
+                    </p>
+                   
+                </div>
+                <div class="col-sm-6">
+                    <img src="bnw.jpg" alt="Larawan" class="img-responsive img-fluid index-img">
+                </div>
+            </div>
+
+            <div class="row p-3">
+                <div class="col-sm-6">
+                Today's Quote: <script>writeRandomQuote();</script>
+                </div>
+            </div>
+        </div>
+
+    <nav class="navbar-fixed-bottom bg-light p-2" id="footer">
+        <div class="container-fluid">
+            <p>All Rights Reserved &#169; Larawan 2021</p>
+            <script>
+                document.write("<p style='font-style:italic; font-size:16px;'>Last Modified On: " + document.lastModified.toLocaleString() + " EST</p>");
+            </script>
+            <p><i>This website is developed as an educational project.</i> <a href="bootstrap.css" target="_blank"> Link to CSS.</a></p>
+        </div>
+    </nav>
+</body>
+</html>
