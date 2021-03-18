@@ -5,7 +5,7 @@ This website is developed for educational project.
 I used HTML, CSS, Bootstrap, and some JavaScript.
 
 - Bootstrap is used to have responsive pages.
-- Javascript is used for some interactive tricks to engage a user, such as: asking for their name when they enter the site, random quotes generator (home page) and random images on every refresh using array tricks, a window pop-up when the user clicks the Click Here button in the homepage. 
+- Javascript is used for some interactive tricks to engage a user, such as: asking for their name when they enter the site, random quotes generator and random images on every refresh using array tricks, a window pop-up when the user clicks the Click Here button in the homepage. 
 
 /* JS features details */
 
