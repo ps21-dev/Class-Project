@@ -33,18 +33,6 @@
         
         window.addEventListener("load", start, false);
 
-        /* Prompt User to Enter Name *  
-        var name = window.prompt("Please enter your name:");
-                            
-        // if name is entered empty, repeat the user to enter name until a character is entered
-        while (name.length == 0) {
-            var name = window.prompt("Error! Please enter a valid name: ");
-
-            if (name.length >= 1) {
-                localStorage.setItem("name", name); //set the name entered as key in the localStorage
-            }
-        }      */
-        
         /* Random Quotes Generator */
         writeRandomQuote = function () {
         var quotes = new Array();
@@ -64,22 +52,6 @@
     
 </head>
 <body> 
-    <script>
-        /* Prompt User to Enter Name */   
-
-        for (var i = 0; i < 1; i++) {
-            var name = window.prompt("Please enter your name:");
-            
-            // if name is entered empty, repeat the user to enter name until a character is entered
-            while (name.length == 0) {
-                name = window.prompt("Error! Please enter a valid name: ");
-                
-            } 
-        }     
-        localStorage.setItem("name", name); //set the name entered as key in the localStorage
-        
-        
-    </script>
         <nav class="navbar navbar-expand-md container-fluid bg-light navbar-light">
             <a href="index.html"><img class="navbar-brand" src="images/logo.PNG" alt="Larawan Logo" width= "150" height= "80"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -111,10 +83,8 @@
         <div class="container" id="index-content">
             <div class="row p-3">
                 <div class="col-sm-6">
-                    <h1>Welcome, <span id="username"></span>
-                        <script>
-                            document.getElementById("username").innerHTML=localStorage.getItem("name");
-                        </script>
+                    <h1>Welcome
+                        
                     </h1>
                     <p><i>This website is developed as an educational project.</i></p>
 
